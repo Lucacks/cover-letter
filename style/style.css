@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 50%;
+    height: 70%;
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.9);
+}
+
+/* Foto/nome */
+
+.foto-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto 20px;
+}
+
+.foto-container img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.name{
+    margin: 10px 0px;
+    font-size: 3rem;
+}
+
+/* Configurações de todas as seções, títulos e linhas horizontais */
+
+.section{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sec-container{
+    flex-basis: 33%;
+    text-align: center;
+    padding: 5px 3px;
+    margin: 10px 0px 15px;
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0px 5px;
+    font-size: 2rem;
+}
+
+hr{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+a:visited{
+    color: initial;
+}
+
+/* Estudos */
+
+.estudos-container{
+    width: 92%;
+    margin: 5px 0px 15px;
+} 
+
+.svg-fiap, .svg-iv2{
+    margin-right: 2%;
+    float: left;
+    display: flex;
+}
+
+.svg-fiap{
+    width: 180px;    
+    margin-top: 40px;
+    transition: .8s;
+}
+.svg-iv2{
+    width: 90px;
+    margin: 20px 45px;
+}
+
+.text-container{
+    float: right;
+    width: 70%;
+}
+
+.estudos-container h3{
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+/* Entretenimentos */
+
+.fa-guitar, .fa-gamepad, .fa-book{
+    font-size: 3rem;
+}
+
+.fa-guitar{
+    color: #591F0A;
+}
+
+.fa-gamepad{
+    color: #0075C4;
+}
+
+.fa-book{
+    color: #EFA00B;
+}
+
+.sec-container h4{
+    font-size: 1.6rem;
+    padding: 5px 0px;
+}
+
+.sec-container p{
+    text-align: center;
+}
+
+/* Conheça um pouco mais */
+
+.know-section hr{
+    margin: 0px auto 10px;
+}
+
+.know-section p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.links-container{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto 40px;
+}
+
+.links-container i{
+    font-size: 3rem;
+    transition: .5s;
+}
+
+.links-container i:hover{
+    transform: scale(1.2);
+}
