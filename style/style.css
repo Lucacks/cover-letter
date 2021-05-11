@@ -7,6 +7,20 @@
 
 :root{
     font-size: 62.5%;
+    --background: #FFFBFC;
+    --text: #020C12;
+    --guitar-color: #591F0A;
+    --book-color: #EFA00B;
+    --gamepad-color: #0075C4;
+}
+
+[data-theme="dark"]{
+    --background: #020C12;
+    --text: #FFFBFC;
+    --guitar-color: #F19D7E;
+    --book-color: #F9D28B;
+    --gamepad-color: #99D6FF;
+    
 }
 
 body{
@@ -14,12 +28,15 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    
+    background: var(--background);
+    color: var(--text);
 }
 
 .container{
-    width: 50%;
+    width: 900px;
     height: 70%;
-    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 0 30px 2px rgba(4, 21, 31, 0.9);
 }
 
 /* Foto/nome */
@@ -39,6 +56,18 @@ body{
 .name{
     margin: 10px 0px;
     font-size: 3rem;
+}
+
+/* Botão para trocar tema */
+
+#trocar-tema{
+    padding: 3px 20px;
+    border-radius: 10px;
+    background: var(--text);
+    color: var(--background);
+    border: none;
+
+    cursor: pointer;
 }
 
 /* Configurações de todas as seções, títulos e linhas horizontais */
@@ -93,12 +122,14 @@ a:visited{
 }
 
 .svg-fiap{
-    width: 180px;    
+   /*  width: 180px;     */
+    width: 25%;
     margin-top: 40px;
     transition: .8s;
 }
 .svg-iv2{
-    width: 90px;
+    /* width: 90px; */
+    width: 12.5%;
     margin: 20px 45px;
 }
 
@@ -119,15 +150,15 @@ a:visited{
 }
 
 .fa-guitar{
-    color: #591F0A;
+    color: var(--guitar-color);
 }
 
 .fa-gamepad{
-    color: #0075C4;
+    color: var(--gamepad-color);
 }
 
 .fa-book{
-    color: #EFA00B;
+    color: var(--book-color);
 }
 
 .sec-container h4{
@@ -160,6 +191,7 @@ a:visited{
 .links-container i{
     font-size: 3rem;
     transition: .5s;
+    color: var(--text);
 }
 
 .links-container i:hover{
